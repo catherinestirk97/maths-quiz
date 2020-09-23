@@ -30,5 +30,3 @@ if(total === answer){
     reset();
 }
 }
-
-let hello = alert("hello github Desktop");
