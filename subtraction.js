@@ -1,14 +1,14 @@
 let x = (Math.round(Math.random() * 12));
 let y = (Math.round(Math.random() * 12));  
-let total = x+y;
+let total = x-y;
 
-document.getElementById("calculation").innerHTML = `${x} + ${y}`
+document.getElementById("calculation").innerHTML = `${x} - ${y}`
 
 function generateNewNumber(){
     x = (Math.round(Math.random() * 12));
     y = (Math.round(Math.random() * 12)); 
-    total = x+y;
-    document.getElementById("calculation").innerHTML = `${x} + ${y}`
+    total = x-y;
+    document.getElementById("calculation").innerHTML = `${x} - ${y}`
 }
 
 function reset(){
