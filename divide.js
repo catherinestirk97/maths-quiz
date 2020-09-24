@@ -28,9 +28,17 @@ if(total === answer){
     alert("Congratulations! That was the right answer.");
     generateNewNumber();
     reset();
+    changeBackgroundColor();
 } else {
     alert("Sorry that was incorrect! Please try again.");
     console.log(answer)
     reset();
 }
+}
+
+function changeBackgroundColor() {
+    let background = document.querySelector(".changeColor");
+    background.style.animation = 'none';
+    background.offsetHeight; /* trigger reflow */
+    background.style.animation = null; 
 }

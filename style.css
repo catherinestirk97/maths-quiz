@@ -1,13 +1,34 @@
 body {
-  background-image:linear-gradient(to bottom left,#C6FFDD,#FBD786,#f7797d);
+  /* background-image:linear-gradient(to bottom left,#C6FFDD,#FBD786,#f7797d); */
   height: 100vh;
   background-size:  cover;
-  background-position: bottom;
+  background-position: bottom; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: 'Grandstander' !important;
+}
+
+.index {
+    background-image:linear-gradient(to bottom left,#C6FFDD,#FBD786,#f7797d);
+}
+
+.changeColor {
+    background-color:#98fb98;
+    animation-name: colorChange;
+  animation-duration: 20s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+@keyframes colorChange {
+    /* from {background-color: #98fb98;}
+    to {background-color: #f7797d;} */
+    0% {background-color: #98fb98;}
+    50% {background-color: #fdfd96;}
+    100% {background-color: #f7797d;}
+
 }
 
 h1 {
